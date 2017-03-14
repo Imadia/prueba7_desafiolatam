@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+<h1>Lista de empresas</h1>
+
+<%= render 'form', company: @company %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @companies.each do |company| %>
+      <%= render 'company', company: company %>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%#= link_to 'New Company', new_company_path %>
