@@ -35,3 +35,4 @@ end
 	end
 end
 
+AdminUser.create!(email: 'admin@example.com', password: '123456', password_confirmation: 'password')
